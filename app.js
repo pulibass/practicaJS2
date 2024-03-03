@@ -100,21 +100,6 @@ letraA()  */
 //10.	Escribe un programa que pida una frase y escriba las vocales que aparecen
 
 /* function fraseVocal() {
-    let frase = prompt("ingrese una frase que contenga vocales")
-    let vocales = [];
-
-    for (let i = 0; i < frase.length; i++) {
-        if (frase[i] === "a" || frase[i] === "e" || frase[i] === "i" || frase[i] === "o" || frase[i] === "u") {
-            vocales.push(frase[i])
-            console.log(frase[i])
-
-        }
-        return document.write("La cantidad de vocales en la frase son " + vocales.length + ". Las vocales son: " + vocales.join(", ")); //aca estaba el erro
-    }
-}
-fraseVocal() */
-
-/* function fraseVocal() {
     let frase = prompt("Ingrese una frase que contenga vocales");
     let vocales = [];
     for (let i = 0; i < frase.length; i++) {
