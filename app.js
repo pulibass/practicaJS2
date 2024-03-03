@@ -129,4 +129,64 @@ fraseVocal();
  */
 
 
+//11.	Escribe un programa que pida una frase, escriba cuántas de las letras que tiene son vocales y escriba cuántas veces aparecen cada una de las vocales
+
+/* function fraseVocal() {
+    let frase = prompt("Ingrese una frase que contenga vocales");
+    let vocales = [];
+    for (let i = 0; i < frase.length; i++) {
+        if (frase[i] === "a" || frase[i] === "e" || frase[i] === "i" || frase[i] === "o" || frase[i] === "u") {
+            vocales.push(frase[i]);
+            console.log(frase[i]);
+        }
+    }
+    document.write("La cantidad de vocales en la frase son " + vocales.length + ". Las vocales son: " + vocales.join(", "));
+}
+fraseVocal(); */
+
+//13.	Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7(sólo hay que comprobar si lo es por uno de los cuatro)
+
+/* function numeroDivisible() {
+    let numero = parseInt(prompt("ingrese un numero para saber si es divisible por 2, 3, 5, 7"))
+    if (numero % 2 == 0) {
+        document.write("el numero ingresado  es divisible por 2 " + " el numero ingresado es: " + " " + numero)
+    } else if (numero % 3 == 0) {
+        document.write("el numero ingresado  es divisible por 3 " + " el numero ingresado es: " + " " + numero)
+    } else if (numero % 5 == 0) {
+        document.write("el numero ingresado  es divisible por 5 " + " el numero ingresado es: " + " " + numero)
+    } else if (numero % 7 == 0) {
+        document.write("el numero ingresado  es divisible por 7 " + " el numero ingresado es: " + " " + numero)
+    } else {
+        document.write("el numero ingresado no puede ser dividido por 2, 3, 5, 7 " + " el numero ingresado es: " + " " + numero)
+    }
+}
+numeroDivisible() */
+
+//14.	Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible)
+
+/* function numeroDivisible() {
+    let numero = parseInt(prompt("ingrese un numero para saber si es divisible por 2, 3, 5, 7"))
+    if (numero % 2 == 0 || numero % 3 == 0 || numero % 5 == 0 || numero % 7 == 0) {
+        if (numero % 2 == 0) {
+            document.write("el numero ingresado  es divisible por 2 " + " el numero ingresado es: " + " " + numero)
+        } else if (numero % 3 == 0) {
+            document.write("el numero ingresado  es divisible por 3 " + " el numero ingresado es: " + " " + numero)
+        } else if (numero % 5 == 0) {
+            document.write("el numero ingresado  es divisible por 5 " + " el numero ingresado es: " + " " + numero)
+        } else if (numero % 7 == 0) {
+            document.write("el numero ingresado  es divisible por 7 " + " el numero ingresado es: " + " " + numero)
+        } else {
+            document.write("el numero ingresado no puede ser dividido por 2, 3, 5, 7 " + " el numero ingresado es: " + " " + numero)
+        }
+    } else {
+        document.write("el numero ingresado no puede ser dividido por 2, 3, 5, 7 " + " el numero ingresado es: " + " " + numero)
+    }
+}
+numeroDivisible() */
+
+
+
+
+
+
 
