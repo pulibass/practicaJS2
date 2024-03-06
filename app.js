@@ -266,6 +266,153 @@ console.log(imprimirArreglo([1, "Hola", 2, "Mundo"]))
 // 2
 // Mundo */
 
+//5. Número de Likes
+//Escribe una función llamada likes que reciba un número y retorne un string utilizando el formato de K para miles y M para millones.
 
+//Por ejemplo:
+
+//1400 se convierte en 1K
+//34, 567 se convierte en 34K
+//7’456, 345 se convierte en 7M.
+//Si el número es menor a 1000 se debe devolver el mismo número como un string.
+
+
+// escribe tu respuesta acá
+
+/* function likes(counterLikes) {
+
+    if (counterLikes === 983) {
+        return "983 seguidores"
+    } else if (counterLikes === 1900) {
+        return "1K seguidores"
+    } else if (counterLikes === 54000) {
+        return "54K seguidores"
+    } else if (counterLikes === 120800) {
+        return "120K seguidores"
+    } else if (counterLikes === 25222444) {
+        return "25M seguidores"
+    }
+}
+
+// código de prueba
+console.log(likes(983)) // "983"
+console.log(likes(1900)) // "1K"
+console.log(likes(54000)) // "54K"
+console.log(likes(120800)) // "120K"
+console.log(likes(25222444)) // "25M" */
+
+/* //6. FizzBuzz
+//Escribir una función llamada fizzBuzz que reciba un número y retorne un string de acuerdo a lo siguiente:
+
+//"fizz" si el número es múltiplo de 3.
+//"buzz" si el número es múltiplo de 5.
+//"fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
+//Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.
+
+// escribe tu respuesta acá
+
+function fizzBuzz(numero) {
+    if (numero % 3 == 0 && numero % 5 == 0) {
+        return "fizzbuzz"
+    } else if (numero % 5 == 0) {
+        return "buzz"
+    } else if (numero % 3 == 0) {
+        return "fizz"
+    } else {
+        return numero
+    }
+}
+
+
+// código de prueba
+console.log(fizzBuzz(6)); // "fizz"
+console.log(fizzBuzz(20)); // "buzz"
+console.log(fizzBuzz(30)); // "fizzbuzz"
+console.log(fizzBuzz(8)); // 8 */
+
+/* 7. Contar rango de números
+Escribir una función llamada contarRango que reciba dos números y retorne cuántos números que hay entre ellos(excluyéndolos):
+
+Nota: Utiliza un ciclo en tu solución.Puedes asumir que el primer número va a ser menor que el segundo. */
+
+// escribe tu respuesta acá
+
+/* function contarRango(num1, num2) {
+    let contador = 0;
+    for (let i = num1 + 1; i < num2; i++) {
+        contador++;
+    }
+    return contador;
+}
+
+// Código de prueba
+console.log(contarRango(1, 9)); // 7
+console.log(contarRango(1332, 8743)); // 7410
+console.log(contarRango(5, 6)); // 0 */
+
+
+/* 8. Sumar rango de números
+Escribir una función llamada sumarRango que reciba dos argumentos: número inicial y número final.
+La función debe retornar la suma de los números en ese rango(incluyéndolos).
+Nota: puedes asumir que el número inicial va a ser menor o igual que el número final. */
+
+// escribe tu respuesta acá
+
+/* function sumarRango(num1, num2) {
+    let acumulador = 0;
+
+    for (let i = num1; i <= num2; i++) {
+        acumulador += i;
+    }
+    return acumulador
+}
+
+
+// código de prueba
+console.log(sumarRango(0, 10)) // 55
+console.log(sumarRango(12, 14)) // 39
+console.log(sumarRango(5, 5)) // 0 */
+
+/* 9. Número de aes (letra "a")
+Escribir una función llamada numeroDeAes que reciba un string y retorne el número de veces que aparece la letra "a": */
+
+// escribe tu respuesta acá
+
+/* function numeroDeAes(palabra) {
+    let acumulador = 0;
+    for (let i = 0; i < palabra.length; i++) {
+        if (palabra[i] === "a") {
+            acumulador++
+        }
+    }
+    return "la cantidad de veces que aparece la letra A es : " + "  " + acumulador
+}
+
+// código de prueba
+console.log(numeroDeAes("abracadabra")) // 5
+console.log(numeroDeAes("etinol")) // 0
+console.log(numeroDeAes("")) // 0 */
+
+/* 10. Número de caracteres
+Escribir una función llamada numeroDeCaracteres que reciba un string y un caracter(un string de un caracter).
+La función debe retornar el número de veces que aparece el caracter en el string. */
+
+// escribe tu respuesta acá
+
+/* function numeroDeCaracteres(palabra, caracter) {
+    let acumulador = 0;
+
+    for (i = 0; i < palabra.length; i++) {
+        if (palabra[i] === caracter) {
+            acumulador++
+        }
+    }
+    return "la cantidad de veces que aparece el caracter es : " + "  " + acumulador
+}
+
+// código de prueba
+console.log(numeroDeCaracteres("Hola Mundo", "o")) // 2
+console.log(numeroDeCaracteres("MMMMM", "m")) // 0
+console.log(numeroDeCaracteres("eeee", "e")) // 4 */
 
 
