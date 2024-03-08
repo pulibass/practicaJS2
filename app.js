@@ -39,16 +39,15 @@ sumaNumeros() */
 
 //6.	Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
 
-/* function numeroMayor() {
-    let num1 = parseInt(prompt("ingrese el primer numero"))
-    let num2 = parseInt(prompt("ingrese el segundo numero"))
-
+/* function numeroMayor(num1, num2) {
+    num1 = parseInt(prompt("ingrese  nuevamente un numero"))
+    num2 = parseInt(prompt("ingrese el segundo numero")) 
     if (num1 > num2) {
         document.write("el numero mayor es " + num1)
-    }
+    } 
 }
 
-numeroMayor() */
+console.log(numeroMayor()) */
 
 //7.	Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
 
@@ -450,4 +449,19 @@ Escribir una función llamada multiplicarArreglo que reciba un arreglo de númer
 // código de prueba
 console.log(multiplicarArreglo([4, 1, 2, 3])) // 24
 console.log(multiplicarArreglo([1, 2, 3, 4, 5, 6, 7, 8])) // 40320
-console.log(multiplicarArreglo([])) //  */
+console.log(multiplicarArreglo([])) */
+
+/* function arregloRecibido(modificado) {
+    return modificado.sort((a, b) => a - b)
+} 
+console.log(arregloRecibido([3, 9, 122, 0, 2, 1])) 
+*/
+
+/* function impares(array) {
+const numero = array.filter(i => i % 2 == 1)
+return numero.sort((a, b) => b - a)
+}
+console.log(impares([2, 5, 6, 8, 6, 2, 3, 5, 9, 7, 10, 15, 3434,232,421,0])) */
+
+
+
