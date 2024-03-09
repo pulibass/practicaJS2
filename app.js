@@ -41,10 +41,10 @@ sumaNumeros() */
 
 /* function numeroMayor(num1, num2) {
     num1 = parseInt(prompt("ingrese  nuevamente un numero"))
-    num2 = parseInt(prompt("ingrese el segundo numero")) 
+    num2 = parseInt(prompt("ingrese el segundo numero"))
     if (num1 > num2) {
         document.write("el numero mayor es " + num1)
-    } 
+    }
 }
 
 console.log(numeroMayor()) */
@@ -453,8 +453,8 @@ console.log(multiplicarArreglo([])) */
 
 /* function arregloRecibido(modificado) {
     return modificado.sort((a, b) => a - b)
-} 
-console.log(arregloRecibido([3, 9, 122, 0, 2, 1])) 
+}
+console.log(arregloRecibido([3, 9, 122, 0, 2, 1]))
 */
 
 /* function impares(array) {
@@ -463,5 +463,108 @@ return numero.sort((a, b) => b - a)
 }
 console.log(impares([2, 5, 6, 8, 6, 2, 3, 5, 9, 7, 10, 15, 3434,232,421,0])) */
 
+//recibe 2 numeros por prompt y realizar la suma de de los 2, si el usuario no ingresa numero mostrar un mensaje diciendo solo numeros y
+//pedir ingresar numeros nuevamente
+
+/* function sumaDeNumeros() {
+    let num1;
+    let num2;
+
+    while (true) {
+        num1 = prompt("ingrese el primer numero para sumar")
+        if (!isNaN(num1)) {
+            break
+        } else {
+            alert("solo se pueden ingresar numeros")
+        }
+    }
+    while (true) {
+        num2 = prompt("ingrese el segundo numero para sumar")
+        if (!isNaN(num2)) {
+            break
+        } else {
+            alert("solo se pueden ingresar numeros")
+        }
+    }
+    num1 = parseFloat(num1)
+    num2 = parseFloat(num2)
+    let sumar = num1 + num2
+    return console.log("la suma de los dos numero es: " + " " + sumar);
+}
+
+sumaDeNumeros() */
+
+/* function sumaDeNumeros() {
+    let num1, num2;
+
+    function obtenerNumero(mensaje) {
+        let input;
+        while (true) {
+            input = prompt(mensaje);
+            if (!isNaN(input)) {
+                return parseFloat(input);
+            } else {
+                alert("Solo se pueden ingresar números");
+            }
+        }
+    }
+
+    num1 = obtenerNumero("Ingrese el primer número para sumar:");
+    num2 = obtenerNumero("Ingrese el segundo número para sumar:");
+
+    let suma = num1 + num2;
+    console.log("La suma de los dos números es: " + suma);
+    return suma;
+}
+
+sumaDeNumeros(); */
 
 
+//Contador ascendente: Escribe un programa que imprima los números del 1 al 10 en orden ascendente utilizando un bucle while.
+
+/* let numero = 10;
+let i = 0;
+while (i < numero) {
+    i++
+    console.log("numero impresos " + " " + i)
+} */
+
+//Contador descendente: Escribe un programa que imprima los números del 10 al 1 en orden descendente utilizando un bucle while.
+
+/* let numero = 10;
+let i = numero;
+while (i >= 1) {
+    console.log("numero impresos " + " " + i)
+    i--
+}  */
+
+//Tabla de multiplicar: Escribe un programa que solicite al usuario un número y luego imprima la tabla de multiplicar de ese número del 1 al 10 utilizando un bucle while.
+
+/* function multiploWhile(numero) {
+    let multiplo = 2
+    while (multiplo < numero) {
+        multiplo++
+        console.log(multiplo * numero)
+    }
+}
+multiploWhile(12) */
+
+
+//Suma de números pares: Escribe un programa que calcule la suma de todos los números pares del 1 al 100 utilizando un bucle while.
+
+/* function paresWhile() {
+
+    let pares = 100;
+    let iniciador = 1;
+    let suma = []
+    while (iniciador < pares) {
+        iniciador++
+        if (iniciador % 2 == 0) {
+            suma.push(iniciador)
+            console.log("la suma es " + iniciador)
+        }
+    }
+    let total = suma.reduce((a, b) => a + b)
+    return console.log("la suma total de los pares es " + total)
+}
+paresWhile() */
